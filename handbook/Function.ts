@@ -26,7 +26,7 @@ type DescribableFunction = {
     (someArg: number): boolean;
 }
 
-function doSomething(fn: DescribableFunction) {
+function sDoSomething(fn: DescribableFunction) {
     console.log(fn.description + " returned " + fn(6));
 }
 
@@ -36,7 +36,7 @@ let does = <DescribableFunction>function (n: number) {
 
 does.description = "test"
 
-doSomething(does)
+sDoSomething(does)
 // endregion
 
 // region Construct Signatures

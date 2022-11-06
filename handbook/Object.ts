@@ -59,7 +59,7 @@ interface StringArray {
 }
 
 interface Animal {
-    name: string;
+    readonly name: string;
 }
 
 interface Dog extends Animal {
